@@ -16,7 +16,18 @@ class TaskController extends AbstractController
     {
         $champions = new ChampionManager;
         $dChampions = $champions->getPacket();
-        dd($dChampions);
+
+        $currChamp = 'Neeko';
+
+        $dChampions = file_get_contents("http://ddragon.leagueoflegends.com/cdn/11.23.1/data/fr_FR/champion/" . $currChamp . ".json");
+        $rawPacket = json_decode($dChampions);
+
+        // dd($rawPacket);
+        dd($rawPacket['data'], [$currChamp], ['image'], ['full']);
+
+
+
+        // dd($rawPacket);
         return $this->render('task/index.html.twig', [
             'controller_name' => 'TaskController',
         ]);

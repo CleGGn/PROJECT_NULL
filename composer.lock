@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22d08bbaa0c2f047d91cebc51d17b1e9",
+    "content-hash": "03b13351f33322b893d8d8d9705ee7d3",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -565,16 +565,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "511d22bf801fc094bdce9c7b3a238d0d1e8d9512"
+                "reference": "5b77477ba2981a00b423d1bb17084b87eb57a4a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/511d22bf801fc094bdce9c7b3a238d0d1e8d9512",
-                "reference": "511d22bf801fc094bdce9c7b3a238d0d1e8d9512",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/5b77477ba2981a00b423d1bb17084b87eb57a4a5",
+                "reference": "5b77477ba2981a00b423d1bb17084b87eb57a4a5",
                 "shasum": ""
             },
             "require": {
@@ -591,7 +591,7 @@
                 "symfony/deprecation-contracts": "^2.1|^3",
                 "symfony/doctrine-bridge": "^4.4.22|^5.2.7|^6.0",
                 "symfony/framework-bundle": "^3.4.30|^4.3.3|^5.0|^6.0",
-                "symfony/service-contracts": "^1.1.1|^2.0"
+                "symfony/service-contracts": "^1.1.1|^2.0|^3"
             },
             "conflict": {
                 "doctrine/orm": "<2.9",
@@ -658,7 +658,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.5.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.5.2"
             },
             "funding": [
                 {
@@ -674,7 +674,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-30T09:51:33+00:00"
+            "time": "2021-12-01T10:13:31+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -2519,6 +2519,68 @@
                 "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.1"
             },
             "time": "2021-10-20T09:43:03+00:00"
+        },
+        {
+            "name": "symfony-bundles/json-request-bundle",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-bundles/json-request-bundle.git",
+                "reference": "649e9da58ab574d528ad1b6fe874df5b331a6457"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-bundles/json-request-bundle/zipball/649e9da58ab574d528ad1b6fe874df5b331a6457",
+                "reference": "649e9da58ab574d528ad1b6fe874df5b331a6457",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3",
+                "symfony/framework-bundle": "^4.3||^5.0"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^5.0",
+                "phpunit/phpunit": "^6.4",
+                "symfony/phpunit-bridge": "^4.3||^5.0",
+                "symfony/yaml": "^4.3||^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SymfonyBundles\\JsonRequestBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Khaperets",
+                    "email": "khaperets@gmail.com"
+                }
+            ],
+            "description": "Symfony JsonRequest Bundle",
+            "homepage": "https://github.com/symfony-bundles/json-request-bundle",
+            "keywords": [
+                "angular",
+                "bundle",
+                "json",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony-bundles/json-request-bundle/issues",
+                "source": "https://github.com/symfony-bundles/json-request-bundle/tree/v3.1.1"
+            },
+            "time": "2020-06-19T20:46:32+00:00"
         },
         {
             "name": "symfony/apache-pack",
