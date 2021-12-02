@@ -1,9 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Coucou
-{% endblock %}
+
+
+{% block title %}Liste des champions{% endblock %}
+
+
+
+
+
 
 {% block body %}
-	<h1>Bienvenue dans League of Fredo</h1>
-	<div class="example-wrapper"></div>
+
+    <div id="AffichageIconsChamps">
+    {% for img in nameChamp %}
+        <img src="{{ img }}" alt="Image" class="iconChamp">
+    {% endfor %}
+    </div>
+
 {% endblock %}

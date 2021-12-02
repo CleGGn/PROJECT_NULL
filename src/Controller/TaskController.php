@@ -21,17 +21,16 @@ class TaskController extends AbstractController
         $champions = new ChampionManager;
         $dChampions = $champions->getPacket();
         $listFreeChamp = $dChampions->freeChampionIds;
-        // $json = file_get_contents('http://ddragon.leagueoflegends.com/cdn/11.23.1/data/en_US/champion.json');
-        // $champ = json_decode($json, true);
-        // $nameChamp = $champ['data'];
 
-        //dd($nameChamp);
-        // foreach ($nameChamp as $name) {
-        //     $img = $name['image']['full'];
-        //     echo '<img src=http://ddragon.leagueoflegends.com/cdn/11.23.1/img/champion/' . $img . ' class="img-rounded">';
-        // }
+
+        //Envoie sur le twig mon tableau de lien vers les images de l'Api
+        $getAllChamp = new \GetAllChampion();
+        $nameChamp = $getAllChamp->getJsonAllChampions();
+
+
         return $this->render('task/index.html.twig', [
             'controller_name' => 'TaskController',
+            'nameChamp' => $nameChamp
         ]);
     }
 
